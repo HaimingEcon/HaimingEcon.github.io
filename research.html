@@ -5,6 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research — Haiming Wu</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .abstract-toggle {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-accent);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-top: 0.4rem;
+      border: none;
+      background: none;
+      padding: 0;
+      font-family: inherit;
+    }
+    .abstract-toggle:hover {
+      color: #0D3350;
+    }
+    .abstract-toggle .arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+      font-size: 0.75rem;
+    }
+    .abstract-toggle.open .arrow {
+      transform: rotate(90deg);
+    }
+    .abstract-content {
+      display: none;
+      font-size: 0.88rem;
+      color: var(--color-text-secondary);
+      margin-top: 0.5rem;
+      line-height: 1.7;
+    }
+    .abstract-content.open {
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,11 +64,7 @@
   <main class="container page">
 
     <h1 class="section-heading animate-in">Research</h1>
-    <p class="hero-bio animate-in" style="margin-bottom: 2.5rem;">
-      My research focuses on <strong>Empirical Industrial Organisation</strong> and <strong>Structural Econometrics</strong>. 
-      I develop new tools to study economies of scope, market competition, and firm behaviour 
-      in multiproduct settings.
-    </p>
+    <p class="hero-bio animate-in" style="margin-bottom: 2.5rem;">My research focuses on <strong>Empirical Industrial Organisation</strong> and <strong>Structural Econometrics</strong>. I develop new tools to study economies of scope, market competition, and firm behaviour in multiproduct settings.</p>
 
     <!-- WORKING IN PROGRESS -->
     <div class="paper-group animate-in">
@@ -41,54 +74,35 @@
         <p class="paper-title">Identifying Economies of Scope in Multiproduct Firms</p>
         <p class="paper-authors">Single-authored</p>
         <p class="paper-venue">Draft available upon request</p>
-        <p style="font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 0.6rem; line-height: 1.7;">
-          <strong>Abstract:</strong> Estimating economies of scope is empirically challenging when firms exercise 
-          market power and input sharing across products is unobservable. This paper proposes a structural 
-          framework for identifying and estimating economies of scope in multiproduct firms by exploiting the 
-          duality between production and cost functions. The approach recovers the multiproduct production frontier 
-          and implicit cost structure without requiring product-specific input allocations, delivering a 
-          theory-consistent scope measure while avoiding the limitations of standard cost-function approaches. 
-          After establishing nonparametric identification under regularity conditions, I validate the estimator via 
-          Monte Carlo experiments, and apply the method to linked French administrative and production microdata 
-          to conduct merger and breakup counterfactuals.
-        </p>
+        <button class="abstract-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+          <span class="arrow">&#9654;</span> Abstract
+        </button>
+        <p class="abstract-content">Estimating economies of scope is empirically challenging when firms exercise market power and input sharing across products is unobservable. This paper proposes a structural framework for identifying and estimating economies of scope in multiproduct firms by exploiting the duality between production and cost functions. The approach recovers the multiproduct production frontier and implicit cost structure without requiring product-specific input allocations, delivering a theory-consistent scope measure while avoiding the limitations of standard cost-function approaches. After establishing nonparametric identification under regularity conditions, I validate the estimator via Monte Carlo experiments, and apply the method to linked French administrative and production microdata to conduct merger and breakup counterfactuals.</p>
       </div>
 
       <div class="paper-item">
         <p class="paper-title">No Firm-Level Output for a Multiproduct Firm: What Production Function Regressions Identify</p>
-        <p class="paper-authors">with Áureo de Paula</p>
+        <p class="paper-authors">with &Aacute;ureo de Paula</p>
         <p class="paper-venue">Work in progress</p>
-        <p style="font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 0.6rem; line-height: 1.7;">
-          <strong>Abstract:</strong> Multiproduct firms have no well-defined physical output at the firm level, 
-          yet researchers routinely construct scalar output measures and estimate production functions to 
-          recover markups via the Hall (1988) formula. We show that different aggregate output constructions 
-          yield inconsistent markup estimates, each recovering a different weighted average of product-level markups. 
-          Revenue regressions and demand-inversion approaches tend to be uninformative. Informative constructions — 
-          quantity indices and price-index deflation — produce weights shaped by marginal input reallocation rather 
-          than cost shares. Monte Carlo experiments show deviations of 5–15% from the cost-share benchmark at 
-          baseline parameter values, and substantially larger when products are more asymmetric. These distortions 
-          are orthogonal to transmission bias, implying that measured markup trends may partly reflect aggregation artifacts.
-        </p>
+        <button class="abstract-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+          <span class="arrow">&#9654;</span> Abstract
+        </button>
+        <p class="abstract-content">Multiproduct firms have no well-defined physical output at the firm level, yet researchers routinely construct scalar output measures and estimate production functions to recover markups via the Hall (1988) formula. We show that different aggregate output constructions yield inconsistent markup estimates, each recovering a different weighted average of product-level markups. Revenue regressions and demand-inversion approaches tend to be uninformative. Informative constructions — quantity indices and price-index deflation — produce weights shaped by marginal input reallocation rather than cost shares. Monte Carlo experiments show deviations of 5–15% from the cost-share benchmark at baseline parameter values, and substantially larger when products are more asymmetric. These distortions are orthogonal to transmission bias, implying that measured markup trends may partly reflect aggregation artifacts.</p>
       </div>
 
       <div class="paper-item">
         <p class="paper-title">Customer-Focused Entry Deterrence: Creating Loyalty in Dynamic Markets</p>
         <p class="paper-authors">with Sean F. Ennis</p>
         <p class="paper-venue">Draft available upon request</p>
-        <p style="font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 0.6rem; line-height: 1.7;">
-          <strong>Abstract:</strong> Companies in growing industries regularly invest in customer loyalty, 
-          often appearing loss-making in the short term. We show that such investments can enhance a leading 
-          firm's profits not only by expanding its customer base but also by deterring competitor entry. 
-          In rapidly growing markets, an incumbent that fails to implement a loyalty programme risks displacement 
-          by an entrant who does. We find that as market growth increases, incumbents have stronger incentives to 
-          undertake profitable exclusion investments, and that when customers have heterogeneous attitudes toward 
-          loyalty programmes, the investment becomes less attractive under explosive growth.
-        </p>
+        <button class="abstract-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+          <span class="arrow">&#9654;</span> Abstract
+        </button>
+        <p class="abstract-content">Companies in growing industries regularly invest in customer loyalty, often appearing loss-making in the short term. We show that such investments can enhance a leading firm's profits not only by expanding its customer base but also by deterring competitor entry. In rapidly growing markets, an incumbent that fails to implement a loyalty programme risks displacement by an entrant who does. We find that as market growth increases, incumbents have stronger incentives to undertake profitable exclusion investments, and that when customers have heterogeneous attitudes toward loyalty programmes, the investment becomes less attractive under explosive growth.</p>
       </div>
 
     </div>
 
-<!-- PRESENTATIONS -->
+    <!-- PRESENTATIONS -->
     <div class="paper-group animate-in">
       <p class="section-label">Presentations</p>
       <div class="paper-item">
