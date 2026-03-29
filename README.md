@@ -1,102 +1,94 @@
-# Your Academic Website
+# Haiming Wu — Academic Website
 
-A clean, professional personal website for an Economics PhD, ready to deploy on GitHub Pages.
+Personal academic website for Haiming Wu, PhD candidate in Economics at University College London.
 
----
-
-## 📁 Files included
-
-| File              | Purpose                        |
-|-------------------|--------------------------------|
-| `index.html`      | Homepage (bio, working papers, news) |
-| `research.html`   | Full research & publications page |
-| `cv.html`         | CV summary + downloadable PDF  |
-| `contact.html`    | Contact info & academic profiles |
-| `style.css`       | All styling (shared across pages) |
-| `README.md`       | This file                      |
+**Live site:** [haimingecon.github.io](https://haimingecon.github.io)
 
 ---
 
-## 🚀 How to deploy on GitHub Pages (step by step)
+## Site structure
 
-### Step 1: Create a GitHub account
-- Go to [github.com](https://github.com) and sign up (free).
-
-### Step 2: Create a new repository
-1. Click the **+** button (top right) → **New repository**
-2. Name it exactly: `yourusername.github.io`  
-   (replace `yourusername` with your actual GitHub username)
-3. Set it to **Public**
-4. **Do NOT** check "Add a README file" (we already have one)
-5. Click **Create repository**
-
-### Step 3: Upload your site files
-1. On the repository page, click **"uploading an existing file"** link
-2. Drag and drop ALL the files from this folder:
-   - `index.html`
-   - `research.html`
-   - `cv.html`
-   - `contact.html`
-   - `style.css`
-   - Your `photo.jpg` (when ready)
-   - Your `cv.pdf` (when ready)
-3. Write a commit message like "Initial site upload"
-4. Click **Commit changes**
-
-### Step 4: Enable GitHub Pages
-1. Go to your repository **Settings** (tab at the top)
-2. In the left sidebar, click **Pages**
-3. Under "Source", select **Deploy from a branch**
-4. Choose the **main** branch and **/ (root)** folder
-5. Click **Save**
-
-### Step 5: Visit your site!
-- Wait 1–2 minutes, then go to: `https://yourusername.github.io`
-- Your site is live!
+| File | Page |
+|------|------|
+| `index.html` | Homepage — bio, working papers, education & affiliations |
+| `research.html` | Research — papers with collapsible abstracts, presentations |
+| `cv.html` | CV summary with downloadable PDF |
+| `contact.html` | Contact info, office address, profile links |
+| `style.css` | Shared stylesheet |
+| `photo.jpg` | Profile photo |
+| `cv.pdf` | Downloadable CV |
+| `favicon.png` | Browser tab icon |
 
 ---
 
-## ✏️ How to customize
+## How to update
 
-### Replace placeholder text
-Open each `.html` file and search for these placeholders to replace:
+### Edit a page
+1. Go to the repo on GitHub
+2. Click the file you want to edit
+3. Click the pencil icon (top right)
+4. Make your changes
+5. Click **Commit changes**
+6. Wait 1–2 minutes, then hard refresh (Ctrl+Shift+R) to see updates
 
-- `Your Name` → your real name
-- `University Name` → your university
-- `your.email@university.edu` → your email
-- `[Field 1]` and `[Field 2]` → your research fields
-- `YN` (in the photo placeholder) → your initials
-- All paper titles, coauthor names, dates, etc.
+### Add a new paper
+In `research.html`, copy this block inside the working in progress section:
 
-### Add your photo
-1. Save a professional headshot as `photo.jpg` in the same folder
-2. In `index.html`, find this line:
-   ```html
-   <div class="hero-photo-placeholder">YN</div>
-   ```
-3. Replace it with:
-   ```html
-   <img src="photo.jpg" alt="Your Name" class="hero-photo">
-   ```
+```html
+<div class="paper-item">
+  <p class="paper-title">Your Paper Title</p>
+  <p class="paper-authors">with Coauthor Name</p>
+  <p class="paper-venue">Work in progress</p>
+  <button class="abstract-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+    <span class="arrow">&#9654;</span> Abstract
+  </button>
+  <p class="abstract-content">Your abstract here.</p>
+</div>
+```
 
-### Add your CV PDF
-1. Save your CV as `cv.pdf` in the same folder
-2. Upload it to GitHub alongside your other files
-3. The download button on the CV page will work automatically
+Also add a short entry in `index.html` inside the working in progress card:
 
-### Update your site
-After making changes to any file:
-1. Go to your repository on GitHub
-2. Navigate to the file you changed
-3. Click the **pencil icon** (edit) to edit directly on GitHub  
-   — OR re-upload the modified file
-4. Commit changes → site updates in ~1 minute
+```html
+<div style="margin-bottom: 0.8rem;">
+  <p class="card-title">Your Paper Title</p>
+  <p class="card-meta">with Coauthor Name — Work in progress</p>
+</div>
+```
+
+### Update your CV
+1. Compile your LaTeX CV and save the PDF as `cv.pdf`
+2. Go to the repo → Add file → Upload files → upload the new `cv.pdf`
+3. Update `cv.html` if any sections changed
+
+### Update your photo
+1. Save your new photo as `photo.jpg`
+2. Upload it to the repo (it will replace the old one)
+
+### Add a presentation
+In `research.html`, add a new entry inside the presentations section:
+
+```html
+<div class="paper-item">
+  <p class="paper-title">Conference Name (City)</p>
+  <p class="paper-venue">Year</p>
+</div>
+```
 
 ---
 
-## 💡 Tips
+## Custom domain (optional)
 
-- **Custom domain**: You can use a custom domain (e.g., `janedoe.com`) — see [GitHub's guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-github-pages)
-- **Google Scholar link**: Update the footer links to point to your actual profiles
-- **Job market**: The homepage includes a job market notice — remove it when not on the market
-- **Mobile-friendly**: The site is fully responsive and works on phones and tablets
+To use a custom domain like `haimingwu.com` instead of `haimingecon.github.io`:
+
+1. Buy a domain from a registrar (Namecheap, Google Domains, etc.)
+2. In your repo, go to Settings → Pages → Custom domain → enter your domain
+3. At your registrar, add DNS records pointing to GitHub Pages
+4. See [GitHub's guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-github-pages) for full instructions
+
+---
+
+## Built with
+
+- HTML + CSS (no frameworks)
+- Google Fonts: Cormorant Garamond + Source Sans 3
+- Hosted on GitHub Pages
