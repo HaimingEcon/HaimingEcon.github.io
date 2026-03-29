@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Economics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-name">Your Name</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page">
+
+    <!-- HERO SECTION -->
+    <section class="hero animate-in">
+      <!-- Replace the placeholder below with: <img src="photo.jpg" alt="Your Name" class="hero-photo"> -->
+      <div class="hero-photo-placeholder">YN</div>
+      <div class="hero-content">
+        <h1 class="hero-name">Your Name</h1>
+        <p class="hero-title">PhD Candidate in Economics — University Name</p>
+        <p class="hero-bio">
+          Welcome! I am a PhD candidate in Economics at [University Name]. 
+          My research interests lie at the intersection of [Field 1] and [Field 2]. 
+          I study how [brief description of your research agenda, e.g., "public policies 
+          shape household financial decisions in developing economies"].
+        </p>
+        <p class="hero-bio" style="margin-top: 0.8rem;">
+          I am on the <strong>2025–2026 job market</strong>. 
+          <!-- Remove this line if you are not currently on the job market -->
+        </p>
+      </div>
+    </section>
+
+    <!-- QUICK SECTIONS -->
+    <section class="home-grid">
+
+      <!-- Working Papers -->
+      <div class="home-card animate-in">
+        <p class="section-label">Working papers</p>
+        <div style="margin-bottom: 1rem;">
+          <p class="card-title">Title of Your Job Market Paper</p>
+          <p class="card-meta">Job market paper</p>
+          <p class="card-meta"><a href="#">PDF</a> · <a href="#">Slides</a></p>
+        </div>
+        <div>
+          <p class="card-title">Another Working Paper Title</p>
+          <p class="card-meta">with Coauthor Name</p>
+          <p class="card-meta"><a href="#">PDF</a></p>
+        </div>
+      </div>
+
+      <!-- News & Updates -->
+      <div class="home-card animate-in">
+        <p class="section-label">News</p>
+        <div style="margin-bottom: 1rem;">
+          <p class="card-meta" style="color: var(--color-text-tertiary);">Jan 2026</p>
+          <p style="font-size: 0.92rem; color: var(--color-text);">Presented at the AEA Annual Meeting in [City].</p>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <p class="card-meta" style="color: var(--color-text-tertiary);">Sep 2025</p>
+          <p style="font-size: 0.92rem; color: var(--color-text);">New working paper: "Paper Title" — <a href="#">Draft available</a>.</p>
+        </div>
+        <div>
+          <p class="card-meta" style="color: var(--color-text-tertiary);">Jun 2025</p>
+          <p style="font-size: 0.92rem; color: var(--color-text);">Awarded the [Fellowship / Prize Name].</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Your Name</span>
+      <div class="footer-links">
+        <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+        <a href="https://twitter.com/" target="_blank">Twitter / X</a>
+        <a href="mailto:your.email@university.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

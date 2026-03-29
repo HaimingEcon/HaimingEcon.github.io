@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-name">Your Name</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page">
+
+    <h1 class="section-heading animate-in">Curriculum Vitae</h1>
+
+    <p class="cv-intro animate-in">
+      A full PDF of my CV is available for download. Below is a summary of my academic positions, 
+      education, and selected honors.
+    </p>
+
+    <!-- Download button -->
+    <div class="animate-in">
+      <a href="cv.pdf" class="cv-download-btn" download>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV (PDF)
+      </a>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="cv-section animate-in">
+      <p class="section-label">Education</p>
+
+      <div class="cv-entry">
+        <span class="cv-year">2021 – 2026</span>
+        <div>
+          <p class="cv-detail-title">PhD in Economics</p>
+          <p class="cv-detail-sub">University Name</p>
+          <p class="cv-detail-sub">Dissertation: "Title of Your Dissertation"</p>
+          <p class="cv-detail-sub">Committee: Advisor 1 (chair), Advisor 2, Advisor 3</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <span class="cv-year">2019 – 2021</span>
+        <div>
+          <p class="cv-detail-title">MA in Economics</p>
+          <p class="cv-detail-sub">University Name</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <span class="cv-year">2015 – 2019</span>
+        <div>
+          <p class="cv-detail-title">BA in Economics, Minor in Mathematics</p>
+          <p class="cv-detail-sub">University Name — Magna Cum Laude</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- POSITIONS -->
+    <div class="cv-section animate-in">
+      <p class="section-label">Positions</p>
+
+      <div class="cv-entry">
+        <span class="cv-year">2024 – present</span>
+        <div>
+          <p class="cv-detail-title">Graduate Research Assistant</p>
+          <p class="cv-detail-sub">Professor [Name], [University]</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <span class="cv-year">Summer 2024</span>
+        <div>
+          <p class="cv-detail-title">Research Intern</p>
+          <p class="cv-detail-sub">World Bank / IMF / Federal Reserve — [Department]</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <span class="cv-year">2022 – 2024</span>
+        <div>
+          <p class="cv-detail-title">Teaching Assistant</p>
+          <p class="cv-detail-sub">Econ 101, Econ 301 — [University]</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AWARDS -->
+    <div class="cv-section animate-in">
+      <p class="section-label">Honors &amp; Awards</p>
+
+      <div class="cv-entry">
+        <span class="cv-year">2025</span>
+        <div>
+          <p class="cv-detail-title">Best Third-Year Paper Award</p>
+          <p class="cv-detail-sub">[University] Department of Economics</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <span class="cv-year">2024</span>
+        <div>
+          <p class="cv-detail-title">[Fellowship Name]</p>
+          <p class="cv-detail-sub">[Awarding organization]</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <span class="cv-year">2021</span>
+        <div>
+          <p class="cv-detail-title">Graduate Fellowship</p>
+          <p class="cv-detail-sub">[University]</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="cv-section animate-in">
+      <p class="section-label">Skills &amp; Languages</p>
+
+      <div class="cv-entry">
+        <span class="cv-year">Software</span>
+        <div>
+          <p class="cv-detail-sub">Stata, R, Python, MATLAB, LaTeX, Git</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <span class="cv-year">Languages</span>
+        <div>
+          <p class="cv-detail-sub">English (native), [Language 2] (fluent), [Language 3] (intermediate)</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Your Name</span>
+      <div class="footer-links">
+        <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+        <a href="https://twitter.com/" target="_blank">Twitter / X</a>
+        <a href="mailto:your.email@university.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-name">Your Name</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page">
+
+    <h1 class="section-heading animate-in">Research</h1>
+    <p class="hero-bio animate-in" style="margin-bottom: 2.5rem;">
+      My research focuses on [Field 1] and [Field 2]. I use [methods, e.g., "structural estimation 
+      and natural experiments"] to study [broad question]. Below you'll find my published work, 
+      working papers, and work in progress.
+    </p>
+
+    <!-- PUBLICATIONS -->
+    <div class="paper-group animate-in">
+      <p class="section-label">Publications</p>
+
+      <div class="paper-item">
+        <p class="paper-title">
+          Title of Your Published Paper
+          <span class="paper-badge">Published</span>
+        </p>
+        <p class="paper-authors">with Coauthor A and Coauthor B</p>
+        <p class="paper-venue">American Economic Review, 2025, 115(3), pp. 123–156</p>
+        <div class="paper-links">
+          <a href="#" class="paper-link">PDF</a>
+          <a href="#" class="paper-link">Replication</a>
+          <a href="#" class="paper-link">DOI</a>
+        </div>
+      </div>
+
+      <div class="paper-item">
+        <p class="paper-title">
+          Another Published Paper Title
+          <span class="paper-badge">Published</span>
+        </p>
+        <p class="paper-authors">with Coauthor C</p>
+        <p class="paper-venue">Quarterly Journal of Economics, 2024, 139(2), pp. 789–820</p>
+        <div class="paper-links">
+          <a href="#" class="paper-link">PDF</a>
+          <a href="#" class="paper-link">Online Appendix</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKING PAPERS -->
+    <div class="paper-group animate-in">
+      <p class="section-label">Working papers</p>
+
+      <div class="paper-item">
+        <p class="paper-title">
+          Title of Your Job Market Paper
+          <span class="paper-badge" style="background: #FEF3E2; color: #7A5014;">JMP</span>
+        </p>
+        <p class="paper-authors">Single-authored</p>
+        <p class="paper-venue">Revise & Resubmit, Journal Name</p>
+        <p style="font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 0.6rem; line-height: 1.7;">
+          <strong>Abstract:</strong> Write a 2–3 sentence abstract here. This paper studies [topic] 
+          using [method]. I find that [main result], which implies [policy relevance].
+        </p>
+        <div class="paper-links">
+          <a href="#" class="paper-link">PDF</a>
+          <a href="#" class="paper-link">Slides</a>
+          <a href="#" class="paper-link">SSRN</a>
+        </div>
+      </div>
+
+      <div class="paper-item">
+        <p class="paper-title">Another Working Paper Title</p>
+        <p class="paper-authors">with Coauthor D</p>
+        <p class="paper-venue">Under review</p>
+        <div class="paper-links">
+          <a href="#" class="paper-link">PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK IN PROGRESS -->
+    <div class="paper-group animate-in">
+      <p class="section-label">Work in progress</p>
+
+      <div class="paper-item">
+        <p class="paper-title">A Descriptive Title of Ongoing Project</p>
+        <p class="paper-authors">with Coauthor E — Draft coming soon</p>
+      </div>
+
+      <div class="paper-item">
+        <p class="paper-title">Another Project You're Working On</p>
+        <p class="paper-authors">Single-authored — Data collection phase</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Your Name</span>
+      <div class="footer-links">
+        <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+        <a href="https://twitter.com/" target="_blank">Twitter / X</a>
+        <a href="mailto:your.email@university.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
